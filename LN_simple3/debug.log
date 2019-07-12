@@ -1,0 +1,414 @@
+INFO  [AWT-EventQueue-0] 2018-09-07 15:20:15,417 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2018-09-07 15:20:15,636 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2018-09-09 13:59:25,561 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2018-09-09 13:59:25,744 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2018-09-09 16:12:07,700 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2018-09-09 16:12:07,879 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2018-09-09 16:21:50,560 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2018-09-09 16:21:50,734 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2018-09-11 18:22:16,300 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2018-09-11 18:22:16,470 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2018-09-13 19:05:46,662 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2018-09-13 19:05:46,812 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2018-09-13 19:28:54,166 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2018-09-13 19:28:54,311 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2018-09-14 11:11:54,534 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2018-09-14 11:11:54,733 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [SwingWorker-pool-1-thread-1] 2018-09-14 11:12:04,034 repast.simphony.batch.ssh.LocalSession - 
+	Copying locally /var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/sarahjohnson_localhost3679116682951756560.zip to 
+/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/simphony_model_1536919921412 ...
+INFO  [SwingWorker-pool-1-thread-1] 2018-09-14 11:12:04,143 repast.simphony.batch.ssh.LocalSession - Copying Finished.
+INFO  [SwingWorker-pool-1-thread-1] 2018-09-14 11:12:04,153 repast.simphony.batch.ssh.SessionsDriver - Initialization Time: 0.0455
+INFO  [SwingWorker-pool-1-thread-1] 2018-09-14 11:12:04,153 repast.simphony.batch.ssh.LocalSession - Unzipping model /var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/simphony_model_1536919921412/sarahjohnson_localhost3679116682951756560.zip
+INFO  [SwingWorker-pool-1-thread-1] 2018-09-14 11:12:04,678 repast.simphony.batch.ssh.LocalSession - Running model on localhost ...
+INFO  [Thread-1] 2018-09-14 11:12:24,199 repast.simphony.batch.ssh.LocalSession - ERROR [main] 11:12:24,195 repast.simphony.batch.InstanceRunner - Error while running model
+INFO  [Thread-1] 2018-09-14 11:12:24,200 repast.simphony.batch.ssh.LocalSession - java.lang.NoClassDefFoundError: javax/media/j3d/Node
+INFO  [Thread-1] 2018-09-14 11:12:24,200 repast.simphony.batch.ssh.LocalSession - 	at java.lang.Class.getDeclaredMethods0(Native Method)
+INFO  [Thread-1] 2018-09-14 11:12:24,200 repast.simphony.batch.ssh.LocalSession - 	at java.lang.Class.privateGetDeclaredMethods(Class.java:2615)
+INFO  [Thread-1] 2018-09-14 11:12:24,201 repast.simphony.batch.ssh.LocalSession - 	at java.lang.Class.privateGetPublicMethods(Class.java:2733)
+INFO  [Thread-1] 2018-09-14 11:12:24,201 repast.simphony.batch.ssh.LocalSession - 	at java.lang.Class.getMethods(Class.java:1472)
+INFO  [Thread-1] 2018-09-14 11:12:24,201 repast.simphony.batch.ssh.LocalSession - 	at repast.simphony.engine.watcher.WatchAnnotationReader.findWatchAnnotation(WatchAnnotationReader.java:41)
+INFO  [Thread-1] 2018-09-14 11:12:24,201 repast.simphony.batch.ssh.LocalSession - 	at repast.simphony.engine.watcher.WatchAnnotationReader.processClass(WatchAnnotationReader.java:30)
+INFO  [Thread-1] 2018-09-14 11:12:24,201 repast.simphony.batch.ssh.LocalSession - 	at repast.simphony.engine.watcher.WatchAnnotationReader.processClasses(WatchAnnotationReader.java:36)
+INFO  [Thread-1] 2018-09-14 11:12:24,202 repast.simphony.batch.ssh.LocalSession - 	at repast.simphony.scenario.ScenarioLoader.load(ScenarioLoader.java:149)
+INFO  [Thread-1] 2018-09-14 11:12:24,202 repast.simphony.batch.ssh.LocalSession - 	at repast.simphony.batch.OneRunBatchRunner.init(OneRunBatchRunner.java:53)
+INFO  [Thread-1] 2018-09-14 11:12:24,202 repast.simphony.batch.ssh.LocalSession - 	at repast.simphony.batch.OneRunBatchRunner.<init>(OneRunBatchRunner.java:47)
+INFO  [Thread-1] 2018-09-14 11:12:24,202 repast.simphony.batch.ssh.LocalSession - 	at repast.simphony.batch.InstanceRunner.configure(InstanceRunner.java:159)
+INFO  [Thread-1] 2018-09-14 11:12:24,202 repast.simphony.batch.ssh.LocalSession - 	at repast.simphony.batch.InstanceRunner.main(InstanceRunner.java:216)
+INFO  [Thread-1] 2018-09-14 11:12:24,202 repast.simphony.batch.ssh.LocalSession - Caused by: java.lang.ClassNotFoundException: javax.media.j3d.Node
+INFO  [Thread-1] 2018-09-14 11:12:24,203 repast.simphony.batch.ssh.LocalSession - 	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+INFO  [Thread-1] 2018-09-14 11:12:24,203 repast.simphony.batch.ssh.LocalSession - 	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+INFO  [Thread-1] 2018-09-14 11:12:24,203 repast.simphony.batch.ssh.LocalSession - 	at java.security.AccessController.doPrivileged(Native Method)
+INFO  [Thread-1] 2018-09-14 11:12:24,203 repast.simphony.batch.ssh.LocalSession - 	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+INFO  [Thread-1] 2018-09-14 11:12:24,203 repast.simphony.batch.ssh.LocalSession - 	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+INFO  [Thread-1] 2018-09-14 11:12:24,203 repast.simphony.batch.ssh.LocalSession - 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+INFO  [Thread-1] 2018-09-14 11:12:24,203 repast.simphony.batch.ssh.LocalSession - 	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+INFO  [Thread-1] 2018-09-14 11:12:24,204 repast.simphony.batch.ssh.LocalSession - 	... 12 more
+INFO  [Thread-1] 2018-09-14 11:12:24,241 repast.simphony.batch.ssh.LocalSession - ERROR [main] 11:12:24,239 repast.simphony.batch.InstanceRunner - Error while running model
+INFO  [Thread-1] 2018-09-14 11:12:24,242 repast.simphony.batch.ssh.LocalSession - java.lang.NoClassDefFoundError: javax/media/j3d/Node
+INFO  [Thread-1] 2018-09-14 11:12:24,242 repast.simphony.batch.ssh.LocalSession - 	at java.lang.Class.getDeclaredMethods0(Native Method)
+INFO  [Thread-1] 2018-09-14 11:12:24,242 repast.simphony.batch.ssh.LocalSession - 	at java.lang.Class.privateGetDeclaredMethods(Class.java:2615)
+INFO  [Thread-1] 2018-09-14 11:12:24,242 repast.simphony.batch.ssh.LocalSession - 	at java.lang.Class.privateGetPublicMethods(Class.java:2733)
+INFO  [Thread-1] 2018-09-14 11:12:24,242 repast.simphony.batch.ssh.LocalSession - 	at java.lang.Class.getMethods(Class.java:1472)
+INFO  [Thread-1] 2018-09-14 11:12:24,243 repast.simphony.batch.ssh.LocalSession - 	at repast.simphony.engine.watcher.WatchAnnotationReader.findWatchAnnotation(WatchAnnotationReader.java:41)
+INFO  [Thread-1] 2018-09-14 11:12:24,243 repast.simphony.batch.ssh.LocalSession - 	at repast.simphony.engine.watcher.WatchAnnotationReader.processClass(WatchAnnotationReader.java:30)
+INFO  [Thread-1] 2018-09-14 11:12:24,243 repast.simphony.batch.ssh.LocalSession - 	at repast.simphony.engine.watcher.WatchAnnotationReader.processClasses(WatchAnnotationReader.java:36)
+INFO  [Thread-1] 2018-09-14 11:12:24,243 repast.simphony.batch.ssh.LocalSession - 	at repast.simphony.scenario.ScenarioLoader.load(ScenarioLoader.java:149)
+INFO  [Thread-1] 2018-09-14 11:12:24,243 repast.simphony.batch.ssh.LocalSession - 	at repast.simphony.batch.OneRunBatchRunner.init(OneRunBatchRunner.java:53)
+INFO  [Thread-1] 2018-09-14 11:12:24,243 repast.simphony.batch.ssh.LocalSession - 	at repast.simphony.batch.OneRunBatchRunner.<init>(OneRunBatchRunner.java:47)
+INFO  [Thread-1] 2018-09-14 11:12:24,244 repast.simphony.batch.ssh.LocalSession - 	at repast.simphony.batch.InstanceRunner.configure(InstanceRunner.java:159)
+INFO  [Thread-1] 2018-09-14 11:12:24,244 repast.simphony.batch.ssh.LocalSession - 	at repast.simphony.batch.InstanceRunner.main(InstanceRunner.java:216)
+INFO  [Thread-1] 2018-09-14 11:12:24,244 repast.simphony.batch.ssh.LocalSession - Caused by: java.lang.ClassNotFoundException: javax.media.j3d.Node
+INFO  [Thread-1] 2018-09-14 11:12:24,244 repast.simphony.batch.ssh.LocalSession - 	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+INFO  [Thread-1] 2018-09-14 11:12:24,244 repast.simphony.batch.ssh.LocalSession - 	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+INFO  [Thread-1] 2018-09-14 11:12:24,244 repast.simphony.batch.ssh.LocalSession - 	at java.security.AccessController.doPrivileged(Native Method)
+INFO  [Thread-1] 2018-09-14 11:12:24,245 repast.simphony.batch.ssh.LocalSession - 	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+INFO  [Thread-1] 2018-09-14 11:12:24,245 repast.simphony.batch.ssh.LocalSession - 	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+INFO  [Thread-1] 2018-09-14 11:12:24,245 repast.simphony.batch.ssh.LocalSession - 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+INFO  [Thread-1] 2018-09-14 11:12:24,245 repast.simphony.batch.ssh.LocalSession - 	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+INFO  [Thread-1] 2018-09-14 11:12:24,245 repast.simphony.batch.ssh.LocalSession - 	... 12 more
+INFO  [pool-2-thread-1] 2018-09-14 11:13:04,688 repast.simphony.batch.ssh.LocalDonePoller - Polled /var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/simphony_model_1536919921412 for DONE:  yes
+INFO  [SwingWorker-pool-1-thread-1] 2018-09-14 11:13:04,689 repast.simphony.batch.ssh.SessionsDriver - Run Time: 1.0089
+INFO  [SwingWorker-pool-1-thread-1] 2018-09-14 11:13:04,717 repast.simphony.batch.ssh.LocalSession - Finding output on localhost in /var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/simphony_model_1536919921412
+WARN  [SwingWorker-pool-1-thread-1] 2018-09-14 11:13:04,738 repast.simphony.batch.ssh.OutputFinder - No model output found matching glob:{**/,}TcellsContacted*.batch_param_map.csv in /var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/simphony_model_1536919921412/instance_1
+WARN  [SwingWorker-pool-1-thread-1] 2018-09-14 11:13:04,738 repast.simphony.batch.ssh.OutputFinder - No model output found matching glob:{**/,}DCscontacted*.batch_param_map.csv in /var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/simphony_model_1536919921412/instance_1
+WARN  [SwingWorker-pool-1-thread-1] 2018-09-14 11:13:04,738 repast.simphony.batch.ssh.OutputFinder - No model output found matching glob:{**/,}TcellCount*.batch_param_map.csv in /var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/simphony_model_1536919921412/instance_1
+WARN  [SwingWorker-pool-1-thread-1] 2018-09-14 11:13:04,738 repast.simphony.batch.ssh.OutputFinder - No model output found matching glob:{**/,}grids*.batch_param_map.csv in /var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/simphony_model_1536919921412/instance_1
+WARN  [SwingWorker-pool-1-thread-1] 2018-09-14 11:13:04,738 repast.simphony.batch.ssh.OutputFinder - No model output found matching glob:{**/,}MHCDC*.batch_param_map.txt in /var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/simphony_model_1536919921412/instance_1
+WARN  [SwingWorker-pool-1-thread-1] 2018-09-14 11:13:04,738 repast.simphony.batch.ssh.OutputFinder - No model output found matching glob:{**/,}flux*.batch_param_map.csv in /var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/simphony_model_1536919921412/instance_1
+WARN  [SwingWorker-pool-1-thread-1] 2018-09-14 11:13:04,739 repast.simphony.batch.ssh.OutputFinder - No model output found matching glob:{**/,}TcellsContacted*.csv in /var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/simphony_model_1536919921412/instance_1
+WARN  [SwingWorker-pool-1-thread-1] 2018-09-14 11:13:04,739 repast.simphony.batch.ssh.OutputFinder - No model output found matching glob:{**/,}DCscontacted*.csv in /var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/simphony_model_1536919921412/instance_1
+WARN  [SwingWorker-pool-1-thread-1] 2018-09-14 11:13:04,739 repast.simphony.batch.ssh.OutputFinder - No model output found matching glob:{**/,}TcellCount*.csv in /var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/simphony_model_1536919921412/instance_1
+WARN  [SwingWorker-pool-1-thread-1] 2018-09-14 11:13:04,739 repast.simphony.batch.ssh.OutputFinder - No model output found matching glob:{**/,}grids*.csv in /var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/simphony_model_1536919921412/instance_1
+WARN  [SwingWorker-pool-1-thread-1] 2018-09-14 11:13:04,739 repast.simphony.batch.ssh.OutputFinder - No model output found matching glob:{**/,}MHCDC*.txt in /var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/simphony_model_1536919921412/instance_1
+WARN  [SwingWorker-pool-1-thread-1] 2018-09-14 11:13:04,739 repast.simphony.batch.ssh.OutputFinder - No model output found matching glob:{**/,}flux*.csv in /var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/simphony_model_1536919921412/instance_1
+WARN  [SwingWorker-pool-1-thread-1] 2018-09-14 11:13:04,741 repast.simphony.batch.ssh.OutputFinder - No model output found matching glob:{**/,}TcellsContacted*.batch_param_map.csv in /var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/simphony_model_1536919921412/instance_2
+WARN  [SwingWorker-pool-1-thread-1] 2018-09-14 11:13:04,741 repast.simphony.batch.ssh.OutputFinder - No model output found matching glob:{**/,}DCscontacted*.batch_param_map.csv in /var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/simphony_model_1536919921412/instance_2
+WARN  [SwingWorker-pool-1-thread-1] 2018-09-14 11:13:04,742 repast.simphony.batch.ssh.OutputFinder - No model output found matching glob:{**/,}TcellCount*.batch_param_map.csv in /var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/simphony_model_1536919921412/instance_2
+WARN  [SwingWorker-pool-1-thread-1] 2018-09-14 11:13:04,742 repast.simphony.batch.ssh.OutputFinder - No model output found matching glob:{**/,}grids*.batch_param_map.csv in /var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/simphony_model_1536919921412/instance_2
+WARN  [SwingWorker-pool-1-thread-1] 2018-09-14 11:13:04,742 repast.simphony.batch.ssh.OutputFinder - No model output found matching glob:{**/,}MHCDC*.batch_param_map.txt in /var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/simphony_model_1536919921412/instance_2
+WARN  [SwingWorker-pool-1-thread-1] 2018-09-14 11:13:04,742 repast.simphony.batch.ssh.OutputFinder - No model output found matching glob:{**/,}flux*.batch_param_map.csv in /var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/simphony_model_1536919921412/instance_2
+WARN  [SwingWorker-pool-1-thread-1] 2018-09-14 11:13:04,742 repast.simphony.batch.ssh.OutputFinder - No model output found matching glob:{**/,}TcellsContacted*.csv in /var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/simphony_model_1536919921412/instance_2
+WARN  [SwingWorker-pool-1-thread-1] 2018-09-14 11:13:04,742 repast.simphony.batch.ssh.OutputFinder - No model output found matching glob:{**/,}DCscontacted*.csv in /var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/simphony_model_1536919921412/instance_2
+WARN  [SwingWorker-pool-1-thread-1] 2018-09-14 11:13:04,743 repast.simphony.batch.ssh.OutputFinder - No model output found matching glob:{**/,}TcellCount*.csv in /var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/simphony_model_1536919921412/instance_2
+WARN  [SwingWorker-pool-1-thread-1] 2018-09-14 11:13:04,743 repast.simphony.batch.ssh.OutputFinder - No model output found matching glob:{**/,}grids*.csv in /var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/simphony_model_1536919921412/instance_2
+WARN  [SwingWorker-pool-1-thread-1] 2018-09-14 11:13:04,743 repast.simphony.batch.ssh.OutputFinder - No model output found matching glob:{**/,}MHCDC*.txt in /var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/simphony_model_1536919921412/instance_2
+WARN  [SwingWorker-pool-1-thread-1] 2018-09-14 11:13:04,743 repast.simphony.batch.ssh.OutputFinder - No model output found matching glob:{**/,}flux*.csv in /var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/simphony_model_1536919921412/instance_2
+INFO  [SwingWorker-pool-1-thread-1] 2018-09-14 11:13:04,743 repast.simphony.batch.ssh.SessionsDriver - Aggregating output into /Users/sarahjohnson/Documents/workspace/LN_simple3/output
+INFO  [SwingWorker-pool-1-thread-1] 2018-09-14 11:13:04,748 repast.simphony.batch.ssh.SessionsDriver - Get Output Time: 0.0010
+INFO  [SwingWorker-pool-1-thread-1] 2018-09-14 11:13:04,748 repast.simphony.batch.ssh.SessionsDriver - Finished. Elapsed Time: 1.0560
+INFO  [AWT-EventQueue-0] 2018-09-14 11:14:37,512 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2018-09-14 11:14:37,671 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+FATAL [Thread-6] 2018-09-14 16:49:53,465 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (11.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.reflect.InvocationTargetException
+	at lN_simple3.Tcell$$FastClassByCGLIB$$53cca82c.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: java.lang.ClassCastException: lN_simple3.UncognateCell cannot be cast to lN_simple3.CognateCell
+	at lN_simple3.Tcell.StartUpdate(Tcell.java:93)
+	... 10 more
+INFO  [AWT-EventQueue-0] 2018-09-14 16:58:03,974 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2018-09-14 16:58:04,165 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2018-09-14 16:59:13,505 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2018-09-14 16:59:13,633 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2018-09-14 17:19:54,225 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2018-09-14 17:19:54,460 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2018-09-22 16:39:58,245 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2018-09-22 16:39:58,381 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2018-09-22 16:54:09,724 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2018-09-22 16:54:09,870 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2018-09-22 17:00:32,970 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2018-09-22 17:00:33,119 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2018-09-22 17:10:09,317 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2018-09-22 17:10:09,478 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2018-09-22 17:17:10,533 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2018-09-22 17:17:10,772 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2018-09-22 18:40:33,921 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2018-09-22 18:40:34,061 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2018-09-22 18:43:01,170 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2018-09-22 18:43:01,313 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2018-10-16 17:03:55,839 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2018-10-16 17:03:55,998 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2018-10-16 17:13:49,309 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2018-10-16 17:13:49,452 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2018-10-16 17:17:45,032 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2018-10-16 17:17:45,167 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2018-10-16 19:28:00,292 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2018-10-16 19:28:00,459 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2018-10-16 19:29:58,426 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2018-10-16 19:29:58,577 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2018-10-16 19:37:41,375 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2018-10-16 19:37:41,513 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2018-10-16 19:41:22,238 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2018-10-16 19:41:22,368 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2018-10-21 20:16:10,932 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2018-10-21 20:16:11,095 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2018-10-21 20:17:04,679 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2018-10-21 20:17:04,828 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2018-11-03 13:19:31,018 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2018-11-03 13:19:31,226 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2018-11-03 13:59:06,013 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2018-11-03 13:59:06,176 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2018-11-03 15:27:31,849 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2018-11-03 15:27:31,988 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2018-11-03 16:00:40,917 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2018-11-03 16:00:41,081 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2018-11-03 16:10:01,257 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2018-11-03 16:10:01,411 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2018-11-03 16:20:37,782 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2018-11-03 16:20:37,922 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2018-11-03 16:29:53,227 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2018-11-03 16:29:53,391 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2018-11-03 16:38:29,346 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2018-11-03 16:38:29,468 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2018-11-03 16:52:10,795 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2018-11-03 16:52:10,921 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2018-11-03 17:08:31,851 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2018-11-03 17:08:31,987 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2018-11-03 21:45:53,471 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2018-11-03 21:45:53,638 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2018-11-03 21:59:16,828 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2018-11-03 21:59:16,956 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2018-11-05 15:29:15,942 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2018-11-05 15:29:16,077 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2018-11-05 21:01:39,363 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2018-11-05 21:01:39,640 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2018-11-05 21:02:05,575 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2018-11-05 21:02:05,834 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2018-11-05 22:24:10,054 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2018-11-05 22:24:10,343 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2018-11-06 12:42:43,113 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2018-11-06 12:42:43,365 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2018-11-11 21:40:05,956 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2018-11-11 21:40:06,158 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2019-02-16 12:06:56,262 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2019-02-16 12:06:56,435 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2019-02-16 12:22:34,939 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2019-02-16 12:22:35,072 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2019-02-16 12:30:20,718 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2019-02-16 12:30:20,840 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2019-02-16 12:32:25,759 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2019-02-16 12:32:25,909 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2019-02-16 12:34:04,046 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2019-02-16 12:34:04,253 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2019-03-06 22:47:14,908 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2019-03-06 22:47:15,087 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2019-03-06 22:47:40,539 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2019-03-06 22:47:40,541 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2019-03-06 22:57:10,744 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2019-03-06 22:57:10,919 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2019-03-07 12:57:11,345 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2019-03-07 12:57:11,517 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2019-03-07 13:07:04,900 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2019-03-07 13:07:05,069 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2019-03-07 13:11:55,022 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2019-03-07 13:11:55,025 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2019-03-07 13:15:55,727 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2019-03-07 13:15:55,891 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2019-03-07 13:19:57,127 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2019-03-07 13:19:57,306 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2019-03-19 13:27:27,931 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2019-03-19 13:27:28,583 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2019-03-19 13:58:57,687 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2019-03-19 13:58:57,876 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2019-04-04 13:21:39,174 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2019-04-04 13:21:39,339 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2019-04-04 13:25:01,034 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2019-04-04 13:25:01,209 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2019-04-05 19:57:37,170 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2019-04-05 19:57:37,362 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2019-04-05 20:00:06,616 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2019-04-05 20:00:06,741 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2019-04-10 19:47:58,401 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2019-04-10 19:47:58,578 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2019-04-10 19:51:29,701 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2019-04-10 19:51:29,837 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2019-04-10 20:02:37,570 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2019-04-10 20:02:37,762 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2019-04-10 20:02:38,746 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2019-04-10 20:02:38,769 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2019-05-13 13:20:28,421 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2019-05-13 13:20:28,578 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2019-05-13 13:20:43,468 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2019-05-13 13:20:43,469 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2019-05-24 20:03:00,487 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2019-05-24 20:03:00,723 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2019-05-29 19:47:01,905 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2019-05-29 19:47:02,060 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2019-05-29 20:14:31,478 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2019-05-29 20:14:31,706 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2019-06-02 11:25:24,692 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2019-06-02 11:25:24,862 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2019-06-03 08:25:37,707 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2019-06-03 08:25:37,868 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2019-06-03 13:22:14,626 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2019-06-03 13:22:14,811 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2019-06-03 13:24:21,433 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: /Users/sarahjohnson/Documents/workspace/LN_simple3/output/config.props
+INFO  [AWT-EventQueue-0] 2019-06-03 13:24:21,440 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	/Users/sarahjohnson/Documents/workspace/LN_simple3/batch/batch_params.xml to
+	/var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/unrolledParamFile.txt

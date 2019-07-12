@@ -1,0 +1,9 @@
+model.archive = /Users/sarahjohnson/Documents/workspace/LN_simple3/output/complete_model.jar
+batch.params.file = scenario.rs/batch_params.xml
+ssh.key_dir = /Users/sarahjohnson/.ssh
+poll.frequency = 60.0
+model.output = /Users/sarahjohnson/Documents/workspace/LN_simple3/output
+
+vm.arguments = -Xmx20480M
+local.0.instances = 50
+local.0.working_directory = /var/folders/2s/7gjqwcm97fb66fbpcnprk1k00000gn/T/

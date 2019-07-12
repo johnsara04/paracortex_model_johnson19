@@ -1,0 +1,12 @@
+<repast.simphony.data2.engine.FileSinkDescriptor>
+  <name>DCscontacted</name>
+  <dataSet>DCs Contacted</dataSet>
+  <delimiter>,</delimiter>
+  <format>TABULAR</format>
+  <sourceIds class="linked-hash-set">
+    <string>DCs Contacted</string>
+    <string>TimeSinceEntered</string>
+  </sourceIds>
+  <fileName>./DCscontacted.csv</fileName>
+  <addTimeStamp>true</addTimeStamp>
+</repast.simphony.data2.engine.FileSinkDescriptor>

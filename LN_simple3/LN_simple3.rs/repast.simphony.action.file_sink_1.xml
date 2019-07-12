@@ -1,0 +1,27 @@
+<repast.simphony.data2.engine.FileSinkDescriptor>
+  <name>flux</name>
+  <dataSet>flux</dataSet>
+  <delimiter>,</delimiter>
+  <format>TABULAR</format>
+  <sourceIds class="linked-hash-set">
+    <string>outerRadius</string>
+    <string>Tentered</string>
+    <string>Texited</string>
+    <string>tick</string>
+    <string>Tcellcount</string>
+    <string>cogExited</string>
+    <string>actExited</string>
+    <string>effExited</string>
+    <string>memExited</string>
+    <string>cogExited4</string>
+    <string>actExited4</string>
+    <string>effExited4</string>
+    <string>memExited4</string>
+    <string>cogExited8</string>
+    <string>actExited8</string>
+    <string>effExited8</string>
+    <string>memExited8</string>
+  </sourceIds>
+  <fileName>./flux.csv</fileName>
+  <addTimeStamp>true</addTimeStamp>
+</repast.simphony.data2.engine.FileSinkDescriptor>
