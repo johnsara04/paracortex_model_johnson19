@@ -1,0 +1,19 @@
+<repast.simphony.data2.engine.FileSinkDescriptor>
+  <name>TcellCount</name>
+  <dataSet>TcellCount</dataSet>
+  <delimiter>,</delimiter>
+  <format>TABULAR</format>
+  <sourceIds class="linked-hash-set">
+    <string>Activated</string>
+    <string>Effector</string>
+    <string>Memory</string>
+    <string>tick</string>
+    <string>cd4</string>
+    <string>cd8</string>
+    <string>Tcellcounter</string>
+    <string>cognate</string>
+    <string>Tcelliterator</string>
+  </sourceIds>
+  <fileName>./TcellCount.csv</fileName>
+  <addTimeStamp>true</addTimeStamp>
+</repast.simphony.data2.engine.FileSinkDescriptor>

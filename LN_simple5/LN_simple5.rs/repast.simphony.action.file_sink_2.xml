@@ -1,0 +1,13 @@
+<repast.simphony.data2.engine.FileSinkDescriptor>
+  <name>grids</name>
+  <dataSet>T cell count and grids</dataSet>
+  <delimiter>,</delimiter>
+  <format>TABULAR</format>
+  <sourceIds class="linked-hash-set">
+    <string>grid</string>
+    <string>tick</string>
+    <string>TcellCount</string>
+  </sourceIds>
+  <fileName>./grids.csv</fileName>
+  <addTimeStamp>true</addTimeStamp>
+</repast.simphony.data2.engine.FileSinkDescriptor>

@@ -1,0 +1,16 @@
+<repast.simphony.data2.engine.FileSinkDescriptor>
+  <name>MHCDC</name>
+  <dataSet>MHCDC</dataSet>
+  <delimiter>,</delimiter>
+  <format>TABULAR</format>
+  <sourceIds class="linked-hash-set">
+    <string>tick</string>
+    <string>getMHCI</string>
+    <string>getMHCII</string>
+    <string>ContextMHCI</string>
+    <string>ContextMHCII</string>
+    <string>DCiteration</string>
+  </sourceIds>
+  <fileName>./MHCDC.txt</fileName>
+  <addTimeStamp>true</addTimeStamp>
+</repast.simphony.data2.engine.FileSinkDescriptor>

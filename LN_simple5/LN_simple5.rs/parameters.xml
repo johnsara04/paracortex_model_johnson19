@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<parameters>
+
+
+
+		
+		<parameter name="randomSeed" displayName="Default Random Seed" type="int" 
+						defaultValue="__NULL__"
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$IntConverter"
+									
+		/>
+		
+		<parameter name="beta" displayName="beta" type="double" 
+						defaultValue="60.0" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$DoubleConverter"
+									
+		/>
+		
+		<parameter name="Pe" displayName="Pe" type="double" 
+						defaultValue="0.0106" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$DoubleConverter"
+									
+		/>
+		
+		<parameter name="Pe2" displayName="Pe2" type="double" 
+						defaultValue="0.00106" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$DoubleConverter"
+									
+		/>
+		
+		<parameter name="Crowding_rules" displayName="Crowding_rules" type="int" 
+						defaultValue="1" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$IntConverter"
+									values="1 2 3 4 "
+						
+		/>
+		
+		<parameter name="Tres" displayName="Tres" type="int" 
+						defaultValue="4320" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$IntConverter"
+									values="4320"
+		/>
+		
+		
+		
+		<parameter name="ACTIVATION_MEAN_CD4" displayName="ACTIVATION_MEAN_CD4" type="int" 
+						defaultValue="120" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$IntConverter"
+						values="120 140 200 500"
+									
+		/>	
+
+		<parameter name="ACTIVATION_MEAN_CD8" displayName="ACTIVATION_MEAN_CD8" type="int" 
+						defaultValue="140" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$IntConverter"
+						values="140 160 240 600"
+									
+		/>	
+	
+		
+			
+		<parameter name="EFFECTOR_MEAN_CD4" displayName="EFFECTOR_MEAN_CD4" type="int" 
+						defaultValue="90" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$IntConverter"
+						values="30 60 90"
+									
+		/>	
+		
+		<parameter name="EFFECTOR_MEAN_CD8" displayName="EFFECTOR_MEAN_CD8" type="int" 
+						defaultValue="120" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$IntConverter"
+						values="30 60 120"
+									
+		/>	
+				
+		<parameter name="proftimeCD4" displayName="proftimeCD4" type="int" 
+						defaultValue="1980" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$IntConverter"
+									
+		/>
+		
+	<parameter name="proftimeCD8" displayName="proftimeCD8" type="int" 
+						defaultValue="1260" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$IntConverter"
+									
+		/>
+		
+		<parameter name="MaxProfCD8" displayName="MaxProfCD8" type="int" 
+						defaultValue="16" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$IntConverter"
+									
+		/>
+		<parameter name="MaxProfCD4" displayName="MaxProfCD4" type="int" 
+						defaultValue="10" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$IntConverter"
+									
+		/>	
+		
+		<parameter name="early_dif_ratio" displayName="early_dif_ratio" type="double" 
+						defaultValue="0.01" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$DoubleConverter"
+									
+		/>
+		
+		<parameter name="late_dif_ratio" displayName="late_dif_ratio" type="double" 
+						defaultValue="0.04" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$DoubleConverter"
+									
+		/>
+		
+			<parameter name="noncog_interaction" displayName="noncog_interaction" type="double" 
+						defaultValue="16.0" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$DoubleConverter"
+									
+		/>
+		
+		<parameter name="short_bind" displayName="noncog_interaction" type="int" 
+						defaultValue="30" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$IntConverter"
+									
+		/>
+		<parameter name="long_bind" displayName="long_bind" type="int" 
+						defaultValue="150" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$IntConverter"
+									
+		/>
+					<parameter name="time_bind_change" displayName="time_bind_change" type="int" 
+						defaultValue="1440"
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$IntConverter"
+									values="1440"					
+		/>
+		
+			<parameter name="MAX_BIND_PER_STEP" displayName="MAX_BIND_PER_STEP" type="int" 
+						defaultValue="3"
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$IntConverter"
+									
+		/>
+			<parameter name="DC_MAX_BOUND" displayName="DC_MAX_BOUND" type="int" 
+						defaultValue="15" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$IntConverter"
+									values="10 12 15"					
+		/>
+		
+		
+		
+		
+		<parameter name="Ks" displayName="Ks" type="double" 
+						defaultValue="0.015" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$DoubleConverter"
+									
+		/>
+		
+		<parameter name="decay" displayName="decay" type="double" 
+						defaultValue="0.999" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$DoubleConverter"
+		/>
+		
+		<parameter name="MHCstartvalue" displayName="MHCstartvalue" type="double" 
+						defaultValue="250.0" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$DoubleConverter"
+									values="350.0 250.0 100.0 50.0 "
+						
+		/>
+		
+	
+		
+		<parameter name="halflife1" displayName="halflife1" type="double" 
+						defaultValue="19.00" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$DoubleConverter"
+									values="19.00"
+						
+		/>
+		
+		<parameter name="halflife2" displayName="halflife2" type="double" 
+						defaultValue="60.00"
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$DoubleConverter"
+									values="60.00"
+						
+		/>
+
+		
+		
+		<parameter name="cognition" displayName="cognition" type="double" 
+						defaultValue="3.0E-4" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$DoubleConverter"
+									values="1.0E-4 2.0E-4 3.0E-4 4.0E-4 5.0E-4 6.0E-4 "
+						
+		/>
+		
+			<parameter name="DCpercentage" displayName="DCpercentage" type="double" 
+						defaultValue="0.04" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$DoubleConverter"
+									values="0.7 1.35 0.08 0.04 0.02 0.01 0.1 0.2 0.005 "
+						
+		/>
+		
+		<parameter name="DC_ADDITION_TIME" displayName="DC_ADDITION_TIME" type="int" 
+						defaultValue="10800" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$IntConverter"
+									values="10800"
+						
+		/>
+		
+		
+		
+		<parameter name="S1P1postEntry" displayName="S1P1postEntry" type="double" 
+						defaultValue="0.1" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$DoubleConverter"				
+						values="0.1 0.2 0.4 0.7 0.8 1.0 "			
+		/>
+		
+				<parameter name="S1P1act" displayName="S1P1act" type="double" 
+						defaultValue="0.01" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$DoubleConverter"				
+						values="0.002 0.01 0.02 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1.0 "			
+		/>
+		
+				<parameter name="S1P1eff_late" displayName="S1P1eff_late" type="double" 
+						defaultValue="0.8" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$DoubleConverter"				
+						values="0.002 0.01 0.02 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.85 0.9 0.95 1.0 1.2 1.4 "			
+		/>
+		
+				<parameter name="S1P1eff_early" displayName="S1P1eff_early" type="double" 
+						defaultValue="0.8" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$DoubleConverter"				
+						values="0.002 0.01 0.02 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.85 0.9 0.95 1.0 1.2 1.4 "			
+		/>
+		
+		
+			<parameter name="S1P1mem" displayName="S1P1mem" type="double" 
+						defaultValue="1.0" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$DoubleConverter"				
+						values="0.85 0.9 0.95 1.0 1.2 1.4 "			
+		/>
+		
+		<parameter name="S1P1all_inflam" displayName="S1P1all_inflam" type="double" 
+						defaultValue="0.4" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$DoubleConverter"
+									values="0.2 0.4 0.6 0.8"
+						
+		/>
+		
+		<parameter name="timePostEntryS1P1up" displayName="timePostEntryS1P1up" type="int" 
+						defaultValue="90" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$IntConverter"				
+						values="90"			
+		/>
+			<parameter name="responsetimeInflam" displayName="responsetimeInflam" type="int" 
+						defaultValue="720" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$IntConverter"				
+						values="720"			
+		/>
+		
+			
+		
+		
+		<parameter name="recruitmentT1" displayName="recruitmentT1" type="double" 
+						defaultValue="20000" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$DoubleConverter"
+									values="20000"
+						
+		/>
+		
+		<parameter name="recruitmentT2" displayName="recruitmentT2" type="double" 
+						defaultValue="400000" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$DoubleConverter"
+									values="250000 300000 350000 400000"
+						
+		/>
+		
+		<parameter name="recruitmentFactor" displayName="recruitmentFactor" type="double" 
+						defaultValue="0.000003" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$DoubleConverter"
+									values="0.000003"
+						
+		/>
+		
+	
+		
+
+		
+		<parameter name="maxSwelling" displayName="maxSwelling" type="double" 
+						defaultValue="2.0" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$DoubleConverter"
+									values=" 1.0 1.5 2.0 2.5 3.0 3.5 4.0 4.5 55.0"
+						
+		/>
+					
+		<parameter name="midpoint" displayName="midpoint" type="double" 
+						defaultValue="100000.0" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$DoubleConverter"
+									
+		/>
+		
+		
+		<parameter name="slope" displayName="slope" type="double" 
+						defaultValue="1.4E-4" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$DoubleConverter"								
+		/>
+							
+		
+		
+	
+							
+							
+		
+		</parameters>

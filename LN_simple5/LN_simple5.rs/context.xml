@@ -1,0 +1,8 @@
+<context id="LN_simple5" class = "lN_simple5.lymph_node3DContext" >
+<projection type="continuous space" id ="space"/>
+<projection type="grid" id ="grid"/>
+<projection type="grid" id ="grid2"/>
+<projection id="Geometry" type="value layer"/>
+<projection id="CrossSection" type="value layer"/>
+<projection id="DC interaction network" type ="network"/>
+</context>
