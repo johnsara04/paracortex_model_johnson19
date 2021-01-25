@@ -1,0 +1,39 @@
+package lN_simple5;
+
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+
+public class PrintTcellsContacted {
+ 
+
+ 
+ public static void printTcsCont(String Filename , ArrayList details) throws IOException {
+ 
+//the details coming in are just a value for each DC, 1: TcellsContacted , 2: CognateTcellsContacted 
+	 
+ArrayList<Integer>DetailsPerCell = details;
+
+String fileName =  Filename;
+
+FileWriter pw = new FileWriter(fileName,true); // if this is set at true just write to the end of it. 
+StringBuilder sb = new StringBuilder();
+for (Integer element : DetailsPerCell) {
+sb.append(element.toString()); 
+sb.append(","); 
+ 
+}
+
+pw.write(sb.toString());
+pw.append('\n');
+pw.flush();
+
+pw.close();
+
+ }
+ 
+}
