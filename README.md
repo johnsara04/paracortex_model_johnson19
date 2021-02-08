@@ -22,5 +22,5 @@ s.johnson13@imperial.ac.uk
 Supplementary data available at https://github.com/johnsara04/ABM_Supplementary_Figures
 
 Import LN_simple5 package into repast-simphony. 
-Classes can be found at /LN_simple3/src/lN_simple3
+Classes can be found at /LN_simple5/src/lN_simple5
 Delete cellstyle class for HPC use.
