@@ -24,7 +24,7 @@ public class Constants {
 	
 	
 	//SETTING UP THE GEOMETRY 
-	public static final int SIMULATION_LENGTH =55000;//55000;//58000;//181;//0;//55000;//00;//( each unit represents 20seconds)
+	public static final int SIMULATION_LENGTH =50000;//55000;//58000;//181;//0;//55000;//00;//( each unit represents 20seconds)
 	public static final double OUTER_RADIUS =33;//paracortex radius, each unit represents 6μm
 	public static final double INNER_RADIUS= OUTER_RADIUS-2;//31;//inner radius is set to 2 units less than outer
 	
