@@ -1,6 +1,6 @@
 # paracortex_model_johnson19
 
-Code for the agent based model built in Repast simphony for the paper 'Modelling the effects of lymph node swelling on T-cell response'
+Code for the agent based model built in Repast simphony for the paper 'Lymph node swelling combined with temporary effector T cell re- tention aids T cell response in a model of adaptive immunity'
 
 Sarah C. Johnson 1, Jennifer Frattolin 1, Lowell T. Edgar 1, Mohammad Jafarnejad 2, and James E. Moore Jr. 1,∗
 
