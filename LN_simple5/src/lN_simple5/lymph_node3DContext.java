@@ -1237,8 +1237,58 @@ public class lymph_node3DContext  extends DefaultContext<Object>  {
 		}
 		
 		
+	
+		@ScheduledMethod(start = 5020,priority = 15)
+		public void printInteractions() throws IOException{
+			printDCsContacted2("./DClistDay1.csv");
+		}
+		@ScheduledMethod(start = 9349,priority = 15)
+		public void printInteractions2() throws IOException{
+			printDCsContacted2("./DClistDay2.csv");
+		}
+		@ScheduledMethod(start =13660 ,priority = 15)
+		public void printInteractions3() throws IOException{
+			printDCsContacted2("./DClistDay3.csv");
+		}
+		@ScheduledMethod(start = 17980,priority = 15)
+		public void printInteractions4() throws IOException{
+			printDCsContacted2("./DClistDay4.csv");
+		}
 		
-		@ScheduledMethod(start = 13800,priority = 5)
+		@ScheduledMethod(start = 22300,priority = 15)
+		public void printInteractions5() throws IOException{
+			printDCsContacted2("./DClistDay5.csv");
+		}
+		
+		@ScheduledMethod(start = 26620,priority = 15)
+		public void printInteractions6() throws IOException{
+			printDCsContacted2("./DClistDay6.csv");
+		}
+		
+		
+		public void printDCsContacted2(String filename) throws IOException{
+			Object ob1 = getRandomObject();
+			Context<Object>context =(Context)ContextUtils.getContext(ob1);
+			ArrayList<Integer>  lise = new ArrayList();
+			for (Object obj:context){
+				if (obj instanceof Tcell)
+				{
+					int time_e = ((Tcell) obj).getTimeSinceEntered();
+					int DCscontacted= ((Tcell) obj).getDCContacted();
+					//String filename = "./DClist.csv";		
+					if (obj instanceof CognateCell)
+					{lise.add(1);}
+					else
+					{lise.add(0);}
+					lise.add(time_e);
+					lise.add(DCscontacted);
+					PrintDCsContacted.printDcsCont(filename, lise);
+					lise.clear();		
+				}}
+		}
+		//4320=1day (or could do get DCenter time then add that - test with 3 secs first)
+		//13800=3.19 //DC enter at 700
+		//@ScheduledMethod(start = 13800,priority = 5)
 		public void printDCsContacted() throws IOException{
 			//basically want a list of Tcells : DCs contacted : cognate T cells contacted
 			//but we don't want 50000 cells, maybe we should stick to just 100 new cells, 
@@ -1247,7 +1297,6 @@ public class lymph_node3DContext  extends DefaultContext<Object>  {
 			Context<Object>context =(Context)ContextUtils.getContext(ob1);
 			ArrayList<Integer>  lise = new ArrayList();
 			for (Object obj:context){
-
 				if (obj instanceof Tcell)
 				{
 					int time_e = ((Tcell) obj).getTimeSinceEntered();
