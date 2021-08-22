@@ -41,7 +41,7 @@ public class lymph_nodeBuilder implements ContextBuilder<Object> {
 
 public Context build (Context<Object>context){
 	
-
+//create a grid compartment network
 	NetworkBuilder<Object>netBuilder = new NetworkBuilder<Object>("DC interaction network", context,true);
 	netBuilder.buildNetwork();
 	GridFactory gridFactory = GridFactoryFinder.createGridFactory(null);
@@ -50,7 +50,7 @@ public Context build (Context<Object>context){
 	new SimpleGridAdder<Object>(),
 	true,Constants.GRID_WIDTH,Constants.GRID_SIZE,Constants.GRID_SIZE));
 
-	//set up parameters
+//set up parameters calculated in Constants file.
 	Parameters params = RunEnvironment.getInstance().getParameters();
 	double Inner_Radius = Constants.INNER_RADIUS;
 	double Outer_Radius = Constants.OUTER_RADIUS;
@@ -60,14 +60,14 @@ public Context build (Context<Object>context){
 	int gridHeight = Constants.GRID_SIZE;
 	int gridz = Constants.GRID_SIZE;
 	int TCellCount = Constants.Initial_Tcellcount;
-	int DCCount = Constants.initialDC;//(int)params.getValue("initialDC");//Constants.INITIAL_DC_COUNT; //(Integer)params.getValue("DC_count");
-	int centreP = Constants.CENTRE_POINT; //(for a hemisphere this is only for j and k , for a quarter this is only for j else is 0
-	int centreX= 0;
+	int DCCount = Constants.initialDC;
+	int centreP = Constants.CENTRE_POINT; //(for a hemisphere this for j and k dimension only , for a quarter this is only for j else is 0
+	int centreX= 0; // centre for other dimension (as hemisphere)
 
-	//Duration of simulation
+	//Set duration of simulation
 	RunEnvironment.getInstance().endAt(Constants.SIMULATION_LENGTH);
 
-	//and set up geometry value layer
+	//set up paracortex geometry using geometry value layer
 
 	GridValueLayer geometryLayer = new GridValueLayer("Geometry",true,
 			new BouncyBorders(), Constants.GRID_WIDTH,Constants.GRID_SIZE,Constants.GRID_SIZE); //new WrapAroundBorders()
@@ -78,7 +78,7 @@ public Context build (Context<Object>context){
 						context.addValueLayer(geometryLayer);
 					}}}
 
-			// extra value layer to take a cross section of the GridValueLayer geometry
+			// ====for visualisation purposes - extra layer to take a cross section of GridValueLayer geometry=======
 			GridValueLayer crossSectionLayer = new GridValueLayer("CrossSection",true,
 					new BouncyBorders(), Constants.GRID_SIZE,Constants.GRID_SIZE); //new WrapAroundBorders()
 						for (int j=0; j<gridHeight; j++){
@@ -91,9 +91,9 @@ public Context build (Context<Object>context){
 						Grid<Object> grid2 = gridFactory.createGrid("grid2", context,
 						new GridBuilderParameters<Object>(new BouncyBorders(),   //new WrapAroundBorders()
 						new SimpleGridAdder<Object>(),true,Constants.GRID_SIZE,Constants.GRID_SIZE));
+			//===============================================================================================
 
-
-			//make boundary
+			//make boundary (value = 15)
 						for (int i =0; i < gridWidth; i++){
 							for (int j = 0; j < gridHeight; j++){
 								for (int k = 0; k < gridz; k++){
@@ -106,7 +106,7 @@ public Context build (Context<Object>context){
 						double exit_radius = exit_percent * Outer_Radius;
 						double exit_height = 0.75 * Outer_Radius + (gridHeight/2); //75% of the height of the node
 
-			//make general inside
+			//make general inside (value=20)
 						for (int i =0; i < gridWidth; i++){
 							for (int j = 0; j < gridHeight; j++){
 								for (int k = 0; k < gridz; k++){
@@ -115,7 +115,7 @@ public Context build (Context<Object>context){
 									if (grid.getDistance(otherPoint,centre)  < Inner_Radius )
 									{geometryLayer.set(20,i, j,k);}
 								}}}
-			//make exit 
+			//make exit (value=18)
 						for (int i =0; i < gridWidth; i++){
 							for (int j = 0; j < gridHeight; j++){
 								for (int k = 0; k < gridz; k++){
@@ -125,7 +125,7 @@ public Context build (Context<Object>context){
 										if (grid.getDistance(otherPoint,centre)  < Inner_Radius )
 										{geometryLayer.set(18,i, j,k);}} }}}
 
-			//make rest of entry
+			//make rest of inside (value = 20)
 						for (int i =0; i < gridWidth; i++){
 							for (int j = 0; j < gridHeight; j++){
 								for (int k = 0; k < gridz; k++){
@@ -134,7 +134,7 @@ public Context build (Context<Object>context){
 									if (grid.getDistance(otherPoint,centre)  < exit_radius )
 									{geometryLayer.set(20,i, j,k);}}}}
 
-			//make inside
+			//make HEV entry (value =24)
 						for (int i =0; i < gridWidth; i++){
 							for (int j = 0; j < gridHeight; j++){
 								for (int k = 0; k < gridz; k++){
@@ -143,14 +143,16 @@ public Context build (Context<Object>context){
 									if (grid.getDistance(otherPoint,centre) < entry_radius)
 									{geometryLayer.set(24,i, j,k);}
 								}}}
+			// note: Afferent entry is made within context file (addTCs)
 
-			// take the middle cross section and convert to a 2 D grid
+			// =====for visualisation- take the middle cross section and convert to a 2 D grid
 						for (int j=0; j<gridHeight; j++){
 							for (int k = 0; k < gridz; k++){
 								double v1 = geometryLayer.get(1,j,k);
 								crossSectionLayer.set(v1,j,k);}}
-
-			//then add create and objects to the context
+			//====================================================//
+						
+			//create agents 
 			System.out.println("Initial number of T cell = "+ Constants.Initial_Tcellcount);
 			int numberofcognate = (int)Math.round(Constants.Initial_Tcellcount *(Double)params.getValue("cognition"));// (Constants.COGNATE_VALUE ));
 			int numberCD4 = (int)Math.round(Constants.RatioCD4*numberofcognate);
@@ -158,6 +160,8 @@ public Context build (Context<Object>context){
 			int numberCD8 = (int)Math.round(Constants.RatioCD8*numberofcognate);
 			System.out.println("Number of CD8 "+numberCD8);
 			int numberNormalCells = TCellCount - numberofcognate;
+			
+			// T cell properties
 			int age = RandomHelper.createNormal(1080,100).nextInt();
 			int retain_time = 0;
 			int timeSinceFirstBound =0;
@@ -174,6 +178,8 @@ public Context build (Context<Object>context){
 			int DCContacted = 0;
 			int TimeSinceDif = 0;
 			boolean M=false;
+			
+			// create uncognate TCs and add to context
 			for (int i =0;i<numberNormalCells; i++) {
 			context.add(new UncognateCell(
 			grid,	
@@ -186,68 +192,71 @@ public Context build (Context<Object>context){
 			istring,
 			trackingvalue
 		));}
-// need to alter the random adder so that it only adds to grid points with centre point 
+			
+			// create cognate TCs, firstly CD4+, then add to context
 
-for (int i = 0; i <numberCD4;i++){
-	boolean CD4=true;
-	boolean CD8 = false;
-	context.add(new CognateCell(
-			grid, 		
-			retain_time,
-			age,
-	        timeSinceLastBound,
-	        timeSinceEntered,
-	        DCContacted,
-	        timeSinceFirstBound,
-	        stimulation,
-	        activated,
-	        effector,
-	        profCount,
-	        S1P1,
-	        istring,
-	        trackingvalue,
-	        timeAct,
-	        CD4,
-	        CD8,
-	        M,
-	        TimeSinceDif
-	        ));
+		for (int i = 0; i <numberCD4;i++){
+			boolean CD4=true;
+			boolean CD8 = false;
+			context.add(new CognateCell(
+					grid, 		
+					retain_time,
+					age,
+					timeSinceLastBound,
+					timeSinceEntered,
+					DCContacted,
+					timeSinceFirstBound,
+					stimulation,
+					activated,
+					effector,
+					profCount,
+					S1P1,
+					istring,
+					trackingvalue,
+					timeAct,
+					CD4,
+					CD8,
+					M,
+					TimeSinceDif
+					));
 	
-}
+				}
 
-for (int i = 0; i <numberCD8;i++){
-	boolean CD4=false;
-	boolean CD8 = true;
-	context.add(new CognateCell(
-			grid, 		
-			retain_time,
-			age,
-	        timeSinceLastBound,
-	        timeSinceEntered,
-	        DCContacted,
-	        timeSinceFirstBound,
-	        stimulation,
-	        activated,
-	        effector,
-	        profCount,
-	        S1P1,
-	        istring,
-	        trackingvalue,
-	        timeAct,
-	        CD4,
-	        CD8,
-	        M,
-	        TimeSinceDif
-	        ));
+			// create CD8+ cognate TCs
+			for (int i = 0; i <numberCD8;i++){
+				boolean CD4=false;
+				boolean CD8 = true;
+				context.add(new CognateCell(
+						grid, 		
+						retain_time,
+						age,
+						timeSinceLastBound,
+						timeSinceEntered,
+						DCContacted,
+						timeSinceFirstBound,
+						stimulation,
+						activated,
+						effector,
+						profCount,
+						S1P1,
+						istring,
+						trackingvalue,
+						timeAct,
+						CD4,
+						CD8,
+						M,
+						TimeSinceDif
+						));
 	
-}
+					}
 
-//option to add all the DCs here if wanted,
+//option to add all the DCs here if wanted- not currently used as DCCount=0
 for (int i = 0;i<DCCount;i++){
+	//generate DC properties
     int retainTime = 0;
     int boundCount = 0;
     double value =(Double)params.getValue("MHCstartingvalue");
-    double MHCI  = RandomHelper.createNormal(value, 10).nextDouble();//RandomHelper.nextIntFromTo(200, 280);
+    double MHCI  = RandomHelper.createNormal(value, 10).nextDouble();
     double MHCII  = RandomHelper.createNormal(value, 10).nextDouble();
     int TcellsContacted = 0;
     int cogTcellsContacted=0;
@@ -264,7 +273,6 @@ for (int i = 0;i<DCCount;i++){
     		age2,
     		licenced
     		));
-    //context add ensures they are added to the collection context.
     }
 
 	//list the areas the objects can be added to   
@@ -284,7 +292,7 @@ for (int i = 0;i<DCCount;i++){
 			GridPoint point = FreePoints.get(index);	
 			grid.moveTo (obj, (int)point.getX(),(int)point.getY(),(int)point.getZ());}
 
-	//if want to count Cells added,
+	//to count the cell types present  (though this can also be done in an external iterator)
 		int index3 =0;
 		int index4 = 0;
 		for (Object obj:context){
@@ -295,8 +303,10 @@ for (int i = 0;i<DCCount;i++){
 				if (((CognateCell)obj).getCD8() == true)
 				{index4++;}	}}
 		System.out.println("CD4:CD8 " + index3 +" "+index4);
-		
+	
+// the world and agents are now initiated
 return context;
+
 
 }
 

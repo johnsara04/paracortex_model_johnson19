@@ -62,18 +62,13 @@ public class UncognateCell extends Tcell {
 	 public void seeIfExit() throws IOException
 	    {
 		 Parameters params = RunEnvironment.getInstance().getParameters();
-	    	double value = RandomHelper.nextDoubleFromTo(0, 100000)/100000;//Math.random();// returns a random number between 0.0 and 0.999
+	    	double value = RandomHelper.nextDoubleFromTo(0, 100000)/100000;// returns a random number between 0.0 and 0.999
 	 
-	    	double exitProb = (Double)params.getValue("Pe")* getS1P1(); //*Cs value  Pe = 0.009
-	    	//System.out.println("exit prob = " + exitProb);
+	    	double exitProb = (Double)params.getValue("Pe")* getS1P1(); 
 	    	if (value < exitProb)	
 	    		//no need to remove links as it is already not bound
 	    	{
-	    		//int temp =lymph_node3DContext.getCellCount() -1;
-				//lymph_node3DContext.setCellCount(temp);
 	    	lymph_node3DContext.removeCellExit(this);}
-	    	
-	    	
 	    	else
 	    		checkAge();
 	    	
@@ -83,17 +78,14 @@ public class UncognateCell extends Tcell {
 	 public void seeIfExit2() throws IOException
 	    {
 		 Parameters params = RunEnvironment.getInstance().getParameters();
-	    	double value = RandomHelper.nextDoubleFromTo(0, 100000)/100000;//Math.random();// returns a random number between 0.0 and 0.999
+	    	double value = RandomHelper.nextDoubleFromTo(0, 100000)/100000;// returns a random number between 0.0 and 0.999
 	 
-	    	double exitProb = (Double)params.getValue("Pe2")* getS1P1(); //*Cs value  Pe = 0.009
-	    	//System.out.println("exit prob = " + exitProb);
-	    	if (value < exitProb)	
-	    		//no need to remove links as it is already not bound
-	    	{
-	    		//int temp =lymph_node3DContext.getCellCount() -1;
-				//lymph_node3DContext.setCellCount(temp);
-	    	lymph_node3DContext.removeCellExit(this);}
+	    	double exitProb = (Double)params.getValue("Pe2")* getS1P1(); 
 	    	
+	    	if (value < exitProb)	
+	    		
+	    	{
+	    	lymph_node3DContext.removeCellExit(this);}
 	    	
 	    	else
 	    		checkAge();
@@ -132,8 +124,6 @@ public class UncognateCell extends Tcell {
 				}	
 			}			
 			
-			//int temp =lymph_node3DContext.getCellCount() -1;
-			//lymph_node3DContext.setCellCount(temp);
 			lymph_node3DContext.removeCellAgeing(this);
 		}
 	}

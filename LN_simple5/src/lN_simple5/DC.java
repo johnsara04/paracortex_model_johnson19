@@ -45,7 +45,6 @@ import repast.simphony.valueLayer.GridValueLayer;
 
 public class DC {
   
-
   //  private ContinuousSpace<Object> space;
     private Grid<Object> grid;
     private int retainTime;
@@ -93,7 +92,7 @@ public void toRetain()
 	if (boundcount < Constants.DC_MAX_BOUND)
 	
 	{
-		//System.out.println("retainment method");
+		//generate a list of agents in the nearby vicinity that are unbound
 		  Context<Object> context = (Context)ContextUtils.getContext(this);
 		  GridPoint pt = grid.getLocation(this);
 		  List<Tcell>Tcells = new ArrayList<Tcell>();
@@ -102,11 +101,11 @@ public void toRetain()
 		  for (i = 0; i < gridCells.size();i++){
 			  for (Object Tcell : gridCells.get(i).items())
 			  	{	if (Tcell instanceof Tcell)
-			  			{Tcells.add((Tcell)Tcell);} //not sure this casting will work tbh
+			  			{Tcells.add((Tcell)Tcell);} 
 			  	}
 		  	}
 		  List<Tcell>FilteredFreeTcells = new ArrayList<Tcell>();
-		  //System.out.println("nearby T cell list size = "+gridCells.size() );
+
 		  //don't need to update timesincelastbund 
 		  //don't need to alter bound count early at all
 		  //don't want to update the stimulation here either. 
@@ -121,7 +120,7 @@ public void toRetain()
     		}
 		  }
 		  //now pick one of these eligible cells to retain 
-		  // access the end node and set as retained. //don't actually need to update timesincelast bind at this point. 
+		  // access the end node and set as retained. no-need to update timesincelast bind at this point. 
 		  //do update boundCount. 
 		  //do access retention value and update
     	
@@ -137,9 +136,7 @@ public void toRetain()
 				FilteredFreeTcells.get(index).setRetention(Newretention);
 				Network<Object>net=(Network<Object>)context.getProjection("DC interaction network");
 				net.addEdge(this,FilteredFreeTcells.get(index));
-			//	Tcell tcell = FilteredFreeTcells.get(index);
-				
-				
+			
 			}
 			
 			
@@ -152,7 +149,7 @@ public void toRetain()
 					Network<Object>net=(Network<Object>)context.getProjection("DC interaction network");
 					net.addEdge(this,FilteredFreeTcells.get(index));}
 				
-				//if itmesincefirstbind < 8hours or proliferatign cell
+				//if timesincefirstbind < 8hours or proliferatign cell
 				else if (temp.getTimeSinceFirstBind()  < Constants.time_bind_change || temp.getProfCount()> 0)
 					{
 					FilteredFreeTcells.get(index).setRetention(Newretention2);
@@ -166,11 +163,11 @@ public void toRetain()
 					net.addEdge(this,FilteredFreeTcells.get(index));
 					}
 			}	
-		  	}// close if filtered free t cell > 0
+		  	}// close 'if filtered free t cell > 0'
 		  //update bound count
 				int newBC =  getBoundCount() + 1 ;
 				setBoundCount(newBC);
-	}// close the check max bound
+	}// close 'check max bound'
 	else
 	{};// do not try to bind anything
 				
@@ -178,31 +175,26 @@ public void toRetain()
 	  
 	  
 	  
-    
- 
-
-
 //this method makes a list of grid cells and the agents that they contain in the extent. 
-public List<GridCell<Tcell>> getInsideGrids(GridPoint pt)
-{ Context<Object> context = (Context)ContextUtils.getContext(this);
-GridValueLayer geometryLayer = (GridValueLayer)context.getValueLayer("Geometry");
-GridCellNgh<Tcell>nghCreator = new GridCellNgh<Tcell>(grid,pt,
-        Tcell.class,2,2,2); // this retains in the extend of 2 
-List<GridCell<Tcell>>gridCells = nghCreator.getNeighborhood(true);
-
-//need to add a line of code here to filter out the points that are actually not inside the node
-//List<GridCell<Cell>>gridCells = new  ArrayList<GridCell<Cell>>();
-
-return gridCells;
+	public List<GridCell<Tcell>> getInsideGrids(GridPoint pt)
+		{ Context<Object> context = (Context)ContextUtils.getContext(this);
+			GridValueLayer geometryLayer = (GridValueLayer)context.getValueLayer("Geometry");
+			GridCellNgh<Tcell>nghCreator = new GridCellNgh<Tcell>(grid,pt,
+					Tcell.class,2,2,2); // this retains in the extend of 2 
+			List<GridCell<Tcell>>gridCells = nghCreator.getNeighborhood(true);
+			return gridCells;
 
 }
 
+	
+	
+// Method to check DC age	
 @ScheduledMethod(start = 1, interval = 1, priority = 2)
-public void checkAge() throws IOException
-{
-	double Number = RandomHelper.createNormal(Constants.DClifespan,500).nextDouble();//+/- 3hours //2.5 days = 32hours 10800
-	if (getAge() > Number )
+	public void checkAge() throws IOException
 	{
+		double Number = RandomHelper.createNormal(Constants.DClifespan,500).nextDouble();//+/- 3hours //2.5 days = 32hours 10800
+		if (getAge() > Number )
+		{
 		//get all projections
 		Context<Object> context = (Context)ContextUtils.getContext(this);
 		Network<Object>net=(Network<Object>)context.getProjection("DC interaction network");
@@ -229,7 +221,7 @@ public void checkAge() throws IOException
 }
 
 
-
+// The projections are used to connect the TCs and DCs and store info about how long they have existed for
 
 @ScheduledMethod(start=1,interval=1,priority = 4)
 public void updateProjections()
@@ -255,43 +247,40 @@ public void updateProjections()
 				if (Node instanceof Tcell )
 						{
 						//4. If retain has reached 1 then set last bind to 0 , set retain to 0 ,
-						//5. remove the asscociated projection and set the DC bound count tp -1 
+						//5. remove the associated projection and set the DC bound count tp -1 
 							int ret = ((Tcell) Node).getRetention();
 								if (ret ==1)
 									// release node
 									{   ((Tcell)Node).setRetention(0);
 										((Tcell)Node).setTimeSinceLastBound(0);	
 										//checklicencing
-											if (Node instanceof CognateCell)
+										if (Node instanceof CognateCell)
 												{
-		//**comment out to shorten code	    	//update DC count of cognate cells interacted with
+											//update DC count of cognate cells interacted with
 												int temp2 = getcogTcellsContacted()+1;
 												setcogTcellsContacted(temp2);
 												
 													if (((CognateCell)Node).getActivation()==true)
 														{setLicenced(true);}
 												}
-									//count both how many T cells a DC has contacted overall
-									//all cells are setContact zero bar new cells so data is only taken from newly entered tcekks
-									//if you do then remove the if clause
+									//count how many T cells a DC has contacted overall
+									//all cells are setContact zero except new cells - so data is only taken from newly entered tcells
+									//if you do want this then remove the if clause
 									int DCcont = ((Tcell)Node).getDCContacted();
 									if(DCcont > 0){((Tcell)Node).setDCContacted(DCcont+1);}
-									
-		//**comment out to shorten code			//update DC with T cells contacted 
-									int temp = getTcellsContacted() + 1;
-									setTcellsContacted(temp);
+									//update DC with T cells contacted 
+												int temp = getTcellsContacted() + 1;
+												setTcellsContacted(temp);
+												net.removeEdge(net.getEdge(this,Node));
+												int current = getBoundCount() - 1;
+												setBoundCount(current);
 		
-																	
-		
-									net.removeEdge(net.getEdge(this,Node));
-									int current = getBoundCount() - 1;
-									setBoundCount(current);
-		
-									}
+										}
 					}
 			}
 }
 
+// alter stimulation levels of attached T cells
 public void alterStim(CognateCell RetainedCell)
 {	
     double oldStim = RetainedCell.getStimulation();
@@ -299,42 +288,37 @@ public void alterStim(CognateCell RetainedCell)
     double MHClevel = getMHCII();
     double newStim = oldStim + (Constants.Ks * MHClevel);
     RetainedCell.setStimulation(newStim);
- //System.out.println("Tcell CD4 has" + newStim +" of stimulation");
+
     }
     else if (RetainedCell.getCD8()==true)
     	 {double MHClevel = getMHCI();
         double newStim = oldStim + (Constants.Ks * MHClevel);
         RetainedCell.setStimulation(newStim);
-   // System.out.println("Tcell CD8 has" + newStim +" of stimulation");
+
     }
 }
 
 
+// Decay of MHC signal and ageing of DC
 @ScheduledMethod(start=1,interval=1,priority = 10) // includes ageing
 public void MHCdecay(){
-//double oldMHC = getMHC();//oldMHC*0.9999;
-//double t = RunEnvironment.getInstance().getCurrentSchedule().getTickCount();
-// this should really be timesince entered or age?
 double t = getAge()/3/60; //convert to hours
-
-//double lambdaM_1 = Constants.halflife1;
 double tt= t/Constants.halflife1; //convert hours to time steps
 double newMHC = getInitialMHCI() * Math.pow(0.5,tt);
 setMHCI(newMHC);   
-
 double tt2= t/Constants.halflife2; // convert hours to timesteps
-//double lambdaM_2 = Constants.halflife2;
 double newMHC2 = getInitialMHCII() * Math.pow(0.5,tt2);
 setMHCII(newMHC2);  
-
 int oldAge = getAge();
 setAge(oldAge + 1);
 }
 
 public void setMHCI(double somevalue){
+	
     this.MHCI = somevalue;  
 }
 public void setMHCII(double somevalue){
+	
     this.MHCII = somevalue;  
 }
 
@@ -374,9 +358,6 @@ public void setcogTcellsContacted(int value)
 	this.cogTcellsContacted = value;
 }
 
-
-
-
 public double getInitialMHCI()
 {
 	return initialMHCI;
@@ -386,8 +367,6 @@ public double getInitialMHCII()
 {
 	return initialMHCII;
 }
-
-
 
 public int getAge()
 {
@@ -400,6 +379,7 @@ public void setAge(int value)
 }
 
 private void setLicenced(boolean b) {
+	
 	this.licenced = b;
 }
 

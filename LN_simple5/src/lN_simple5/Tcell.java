@@ -23,7 +23,7 @@ import repast.simphony.valueLayer.GridValueLayer;
 
 public class Tcell {
 	 // variables for the cell
- //   protected ContinuousSpace<Object> space;
+	 // protected ContinuousSpace<Object> space;
     protected Grid<Object> grid; //this was Grid<heatbug> grid;
     public int retainTime;
     public int age;
@@ -86,17 +86,7 @@ public class Tcell {
 			timelist.add(time);
 			timelist.add(x);
 			timelist.add(y);
-			timelist.add(z);
-			
-			//checking stimulation on cd 8 ( change line 77 to instanceof Cognate Cell
-		//	boolean cd= ((CognateCell)this).getCD8();
-		//	if (cd == true)
-		//			{double t =8;timelist.add(t);};
-		//	double s= ((CognateCell)this).getStimulation();
-		//	timelist.add(s);		
-			
-			
-			
+			timelist.add(z);	
 			int is = getIstring();
 			PrintTrack.printCoordinates(Constants.FILE_NAME,is,timelist);
 			timelist.clear();
@@ -105,25 +95,20 @@ public class Tcell {
 		
     	if (retainTime ==0){preStep();}
     	if (timeSinceEntered > 0){timeSinceEntered++;} // only updates newly entered cells
-    	if (getTimeSinceEntered() == Constants.timePostEntryS1P1up) {updateInitalS1P1();}; // after 1 hours S1P1 upregulated. 
-    	// but this contrast with inflammation? 
+    	if (getTimeSinceEntered() == Constants.timePostEntryS1P1up) {updateInitalS1P1();};
+    	// after 1 hours S1P1 upregulated. 
     	
-    	SeeExit1();
-    	
-    	//need to only check age if cell hasn't exited so these two things need to be in the same code
-    	//otherwise a null pointer could be returned
-    	//checkAge();  	
+    	SeeExit1();	
     	
     }
     
-    //I used this method in oct2020:density comment this out if you don't want this in then
+    //I used this method in oct2020:to apply exit-density method: comment this out if you don't want this in then
    // @ScheduledMethod(start = 1, interval = 1 , priority = 9)
     public void StartUpdate2() throws IOException{
     	SeeExit3();
     }
     
-    
-    //I used this method in oct2020:hevcomment this out if you don't want this in then
+    //I used this method in oct2020:hev- exit :comment this out if you don't want this in then
      @ScheduledMethod(start = 1, interval = 1 , priority = 9)
      public void StartUpdate3() throws IOException{
      	SeeExit4();
@@ -173,20 +158,11 @@ public class Tcell {
      if (value ==18)
      {
 	 if (getRetention() ==0)
-	 {
+	   {
 		
 		 seeIfExit();
-	 }
+	   }
      }
-     // this is to allow HEV exit with low probability but applying this here makes all the TCs leave
-     
-     //if (value ==24)
-     //{
-	 //if (getRetention() ==0)
-	 //{
-		// seeIfExit2();
-	 //}
-     //}
      
  }
  
@@ -206,12 +182,11 @@ public class Tcell {
 		 double size= cell.size();
 		 if (size>1){
 			 seeIfExit2(); // so now you can vary Pe on this second thing
-		 }
+		     }
 	 }
 		 
 	 }
      }
- 
  
  // called above:this one is to allow TCs to exit through HEVs if there is two TCs per grid
  public void SeeExit4() throws IOException //only cells that are not bound may exit
@@ -234,7 +209,6 @@ public class Tcell {
 		 
 	 }
      }
- 
  
  
    
@@ -268,33 +242,24 @@ public class Tcell {
     		GridValueLayer geometryLayer = (GridValueLayer)context.getValueLayer("Geometry");
     		GridPoint pt = grid.getLocation(this);
     		double value = geometryLayer.get(pt.getX(),pt.getY(),pt.getZ());
+    			// in earlier iterations we used continuous space and these coordinates
         		//NdPoint pt2 = space.getLocation(this);
-        		//double value2 = geometryLayer.get(pt2.getX(),pt2.getY(),pt2.getZ()); 	
-        		//clean up code if the change in radiius is >1 comment out if testing 0.8 theory
-        		// if (value2==0){StepIn(pt);}
-        		// else {to set a percentage movement probability     		
+        		//double value2 = geometryLayer.get(pt2.getX(),pt2.getY(),pt2.getZ()); 			
     	   
-    			if (value > 14 ) // extra else because don't want cell to do two moves
+    			if (value > 14 ) // extra else loop because don't want cell to do two moves
     			{
-    				//add line here if option is one, step one, if option is two , step 2 etc. 
+    				 
+    				// Check which crowding rules we are following
     				if ((int)params.getValue("Crowding_rules") ==1)
     					{step1(pt);}
     				else if ((int)params.getValue("Crowding_rules") ==2)
-    					{step2(pt);}
-    				
-    				// then if you want to to check the cells again . 
-    				//run step3?
-    				  				
-    				
+    					{step2(pt);}			
     				else if ((int)params.getValue("Crowding_rules") ==3)
     					{step3(pt);}
     				else
     					{stepLeast(pt);}
-    		   
-    	   		} //if (value == 20){stepIn(pt);} //old method to prevent cells exiting too far
+    	   		} 
     	}
-    //	else //don't move don't really need this else and it's more efficient without it. 
-    	//	{};
     }
        
 //movement method 1 > to a least crowded space
@@ -313,7 +278,7 @@ public class Tcell {
                 if (cell2.size() < minCount) {
                     pointWithLeastTcells = cell2.getPoint();
                     minCount = cell2.size();
-                    // i think there might be a bias here eg, probably checks the left bottom first
+                    
                 }}
             moveTowards(pointWithLeastTcells);    
     }
@@ -333,8 +298,7 @@ public class Tcell {
            GridPoint point = gridList2.get(0).getPoint();   
             moveTowards(point);} 
         else
-        {} // there is no where to move to // could add an exit thing here: seeifExit1()
-        //COMPLETELY NO WHERE TO MOVE > COULD ADD IN AN EXIT THING
+        {} // there is no where to move to 
     	
     }
     //movement method 2 // to any random space , no more then 2
@@ -350,10 +314,7 @@ public class Tcell {
             GridPoint point = gridList2.get(0).getPoint();   
              moveTowards(point);} 
          else {}}
-    
-
-    
-    
+     
     //no more than 3 per grid
     public void step3(GridPoint pt)
     {Context<Object> context = (Context)ContextUtils.getContext(this);
@@ -368,8 +329,9 @@ public class Tcell {
             moveTowards(point);} 
         else {}// there is no where to move to
         }
-    //could do with beta 60 and beta 70 > over 16 nodes = 200 cell tracks per speed
-    
+
+   
+    // these methods are as above but including DCs in the cell count
     public void stepD(GridPoint pt){
         
         Context<Object> context = (Context)ContextUtils.getContext(this);
@@ -388,39 +350,8 @@ public class Tcell {
                 }}
             moveTowards(pointWithLeastTcells);    
     }
- //could also use a input and vary from the board
-    //movement method 2 // to any random space , no more then 1 per cell
-    public void stepD2(GridPoint pt)
-    {	Context<Object> context = (Context)ContextUtils.getContext(this);
-       List<GridCell<Object>> gridCells = getInsideGridsDCs(pt);      
-       //then filter this    
-       List<GridCell<Object>>gridList2 = new  ArrayList<GridCell<Object>>();
-        for (GridCell<Object>cell2:gridCells){
-                if (cell2.size() < 2) {
-                	gridList2.add(cell2);}
-        }
-        if (gridList2.size()>=1){
-        SimUtilities.shuffle(gridList2, RandomHelper.getUniform());  
-           GridPoint point = gridList2.get(0).getPoint();   
-            moveTowards(point);} 
-        else
-        {} // there is no where to move to
-    	
-    }
-    //movement method 3 // to any random space , no more then 3 
-    public void stepD3(GridPoint pt)
-    {Context<Object> context = (Context)ContextUtils.getContext(this);
-     List<GridCell<Object>> gridCells = getInsideGridsDCs(pt);        
-     List<GridCell<Object>>gridList2 = new  ArrayList<GridCell<Object>>();
-     for (GridCell<Object>cell2:gridCells){
-      if (cell2.size() < 3) {
-       gridList2.add(cell2);}}
-         if (gridList2.size()>=1){
-         SimUtilities.shuffle(gridList2, RandomHelper.getUniform());  
-            GridPoint point = gridList2.get(0).getPoint();   
-             moveTowards(point);} 
-         else {} // there is no where to move to
-    }
+ 
+    
     //movement method 4 // to any random space, no more then 10 (basically allows loads
     public void stepD4(GridPoint pt)
     {Context<Object> context = (Context)ContextUtils.getContext(this);
@@ -444,6 +375,7 @@ public class Tcell {
         	GridPoint point = pt;
         	 grid.moveTo(this, pt.getX(),pt.getY(),pt.getZ());
         	
+        	 // we use to use continuous space
            //     NdPoint myPoint = space.getLocation(this);
              //   NdPoint otherPoint = new NdPoint(pt.getX(),pt.getY(),pt.getZ());
                //  double[] disp = space.getDisplacement(myPoint , otherPoint);
@@ -465,16 +397,14 @@ public List<GridCell<Tcell>> getInsideGrids(GridPoint pt)
         for (GridCell<Tcell> cell : gridCells2){           
             GridPoint N = cell.getPoint();            
             if (geometryLayer.get(N.getX(),N.getY(),N.getZ()) > 15 ) // could alter this so it is ==20 too        
-            {gridCells.add(cell);}
-            //this is a method to get the neighbouring grids and filter out those that are not inside
+            {gridCells.add(cell);}           
         }
         
         return gridCells;
     }
 
 
-    
-    
+ // similar method to above except removing grids that contain DCs as well
  public List<GridCell<Object>>getInsideGridsDCs(GridPoint pt)
 	{
 		Context<Object> context = (Context)ContextUtils.getContext(this);
@@ -482,23 +412,21 @@ public List<GridCell<Tcell>> getInsideGrids(GridPoint pt)
 	    GridCellNgh<Object>nghCreator = new GridCellNgh<Object>(grid,pt,Object.class,1,1,1);
 	    
 	    List<GridCell<Object>>gridCells3 = nghCreator.getNeighborhood(true);
-	    //this is the list of grid cells
 	    
+	    //this is the list of grid cells
+	
 	    List<GridCell<Object>>gridCellsDC = new  ArrayList<GridCell<Object>>();
-	    //this is the second list  of grid cells , ready to recieve gridcells in right geom
+	    //this is the second list  of grid cells , ready to receive gridcells in right geometry
 	    
 	    //populate the list with the gridcells that are in the right geometry
 	     for (GridCell<Object> cell : gridCells3)   
 	    { GridPoint N = cell.getPoint(); 
-	    if (geometryLayer.get(N.getX(),N.getY(),N.getZ()) > 15 ) // could alter this so it is ==20 too        
+	    if (geometryLayer.get(N.getX(),N.getY(),N.getZ()) > 15 )        
 	        {gridCellsDC.add(cell);}}
 	     
 	    //third list ready to recieve only those gridcells with no DCs
 	    List<GridCell<Object>>gridCellsDC2 = new  ArrayList<GridCell<Object>>();
 	     
-    //this is for every object in the grid cell not every grid cell, so if two cells present then it will run 18 times!
- //for (GridCell<Object> cell : gridCellsDC){
-	  
 	      int i = 0;
 	    		  for (i = 0; i < gridCellsDC.size();i++){  //for i = 0-8
 	    		        for (Object object : gridCellsDC.get(i).items())  //for Object object to gridcell[i].item()
@@ -563,9 +491,9 @@ public List<GridCell<Tcell>> getInsideGrids(GridPoint pt)
     }
     
     
-    //clean up method (can comment out)
+    //clean up method for cells at the boundary - (can comment out)
     public void StepIn(GridPoint pt){
-    	// make a list of neighbors, if not ==1
+    // make a list of neighbors, if not ==1
     //	add to list, shuffle list and move
     	Context<Object> context = (Context)ContextUtils.getContext(this);
         GridValueLayer geometryLayer = (GridValueLayer)context.getValueLayer("Geometry");
@@ -593,14 +521,9 @@ public List<GridCell<Tcell>> getInsideGrids(GridPoint pt)
   
   public void setS1P1(double value)
   {
-	 // this.S1P1 = value;
 	  //overwrite in subclass
   }
   
-  //public double getS1P1()
-  //{
-//	return S1P1;
- // }
     
   public int getIstring()
   {return istring;}

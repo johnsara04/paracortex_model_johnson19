@@ -14,10 +14,6 @@ public class CellStyle2 extends DefaultStyle3D<Tcell> {
 
 	//from physics shapes
 	
-	
-	
-	
-	
 	public TaggedBranchGroup getBranchGroup(Tcell agent, TaggedBranchGroup taggedGroup) {
 		if (taggedGroup == null) { taggedGroup = new TaggedBranchGroup("DEFAULT");
 			Shape3D sphere = ShapeFactory.createSphere(.02f, "DEFAULT");// createCube(.03f, "DEFAULT");
@@ -32,40 +28,42 @@ public class CellStyle2 extends DefaultStyle3D<Tcell> {
 			Object shapeID) {
 		if (taggedAppearance == null) {
 			taggedAppearance = new TaggedAppearance("DEFAULT");
-			AppearanceFactory.setMaterialAppearance(taggedAppearance.getAppearance(), Color.BLUE);}
+			AppearanceFactory.setMaterialAppearance(taggedAppearance.getAppearance(), Color.GRAY);}
 			
 			
-		
 		// can then differentiate between cell appearance 
-			int timesinceentered = agent.getTimeSinceEntered();
+		//	int timesinceentered = agent.getTimeSinceEntered();
 			
-			if  (timesinceentered < 50)
-				{AppearanceFactory.setMaterialAppearance(taggedAppearance.getAppearance(), Color.RED); }
-			else if (timesinceentered >= 50)   
-				{ 
-				AppearanceFactory.setMaterialAppearance(taggedAppearance.getAppearance(), Color.BLUE);} 
-				// can also define the color of the agent in 
-				//the cell file it'self under check age then do agent.getColor. Does mean each agent has to store a colour variable too though, 
-				//when the info is really already stored in it's age. 
+		//	if  (timesinceentered < 50)
+		//		{AppearanceFactory.setMaterialAppearance(taggedAppearance.getAppearance(), Color.GRAY); }
+	//		else if (timesinceentered >= 50)   
+	//			{ 
+	//			AppearanceFactory.setMaterialAppearance(taggedAppearance.getAppearance(), Color.GRAY);} 
+	// 		can also define the color of the agent in 
+	//		the cell file it'self under check age then do agent.getColor. Does mean each agent has to store a colour variable too though, 
+	//		when the info is really already stored in it's age. 
 			
 			if (agent instanceof CognateCell )
-					{   if  (((CognateCell)agent).getActivation() == true)	
-					{  AppearanceFactory.setMaterialAppearance(taggedAppearance.getAppearance(), Color.YELLOW);}
-					{   if  (((CognateCell)agent).getEffector() == true)	
-						{AppearanceFactory.setMaterialAppearance(taggedAppearance.getAppearance(), Color.GREEN);}
+					{   
+					    if  (((CognateCell)agent).getEffector() == true)	
+					    	{ 
+					    		if (((CognateCell)agent).getProfCount() < 8)
+					    		{AppearanceFactory.setMaterialAppearance(taggedAppearance.getAppearance(), Color.BLUE);}
+					    		else
+					    		{AppearanceFactory.setMaterialAppearance(taggedAppearance.getAppearance(), Color.CYAN );}
+					    	}
+					    
+					    else if (((CognateCell)agent).getM() == true)	
+					    	{AppearanceFactory.setMaterialAppearance(taggedAppearance.getAppearance(), Color.MAGENTA);}
+					   
+					    else if (((CognateCell)agent).getActivation() == true)	
+							{  AppearanceFactory.setMaterialAppearance(taggedAppearance.getAppearance(), Color.RED);}
+					    
+					    else
+					    {AppearanceFactory.setMaterialAppearance(taggedAppearance.getAppearance(), Color.YELLOW);}
+					    
 					}
-					{   if  (((CognateCell)agent).getM() == true)	
-					{AppearanceFactory.setMaterialAppearance(taggedAppearance.getAppearance(), Color.CYAN);}
-				}
-					
-					}	
-					
-					
-			
-			
-			
-		
-		
+						
 		return taggedAppearance;
 	}
 	

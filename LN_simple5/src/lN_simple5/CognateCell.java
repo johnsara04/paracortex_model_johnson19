@@ -163,22 +163,11 @@ public class CognateCell extends Tcell {
 		 //if antigenc stimuli disappeared, effectors apoptose rapidly // this removed as short anyway
 		 
 		 int n = RandomHelper.createNormal(Constants.lifespan_EffT,200).nextInt(); //(3days hours)//was 41 //15120,
-		 //int n2 = RandomHelper.createNormal(Constants.lifespan_EffT, 180).nextInt(); //(12hours)//could alter 2160
-		// if (lymph_node3DContext.getTotalMHCII()>100)
-		 //	{
 			 	if (getAge()>n)
 			 		{ removeLinks();		
 			 		lymph_node3DContext.removeCellAgeing(this);
 			 		}
 		 }
-	//	if (lymph_node3DContext.getTotalMHCII()<=100)
-	//		{  if (getAge()>n2)
-	//			{ removeLinks();			
-	//			lymph_node3DContext.removeCellAgeing(this);
-	//			}
-	//		}
-	// }
-	 //no lifespan for memory as beyond scope of the model 
 	}
 	 
 	 
@@ -261,7 +250,6 @@ public class CognateCell extends Tcell {
 							{
 								setActivation(true);
 								setS1P1(S1P1act);
-								//System.out.println("CD8 activated with licenced DC");
 								setTimeSinceFirstAct(1);
 							}
 					}
@@ -283,7 +271,6 @@ public class CognateCell extends Tcell {
 		} //end of cd8 stuff
 }
 	
-		// maybe pass in stimualtion and gridpoint location: why?
 	
 	public void seeIfreproduceActivatedOrEffector() 
     {            
@@ -292,9 +279,9 @@ public class CognateCell extends Tcell {
 				int	somevalue = RandomHelper.createNormal(Constants.proftimeCD4, 90).nextInt();  
 					if (getTimeSinceFirstAct() > somevalue)//(1980, 180))  //11hours,1hour
 						{ 
-							//if (getStimulation()>0.00){
+						
 								seeifreproduceCD4();
-								//}
+								
 						}}}
 		
 		else if (getCD8()==true){
@@ -303,10 +290,8 @@ public class CognateCell extends Tcell {
 				int	somevalue = RandomHelper.createNormal(Constants.proftimeCD8, 90).nextInt();  
 				if (getTimeSinceFirstAct() > somevalue)//(1260, 180)) //7hours
 		{
-				//System.out.println("Seeing if reproducing CD8");
-				//if (getStimulation()>0.01){
 					seeifreproduceCD8();
-					//}
+					
 				}}}
     }
 	
@@ -324,7 +309,7 @@ public class CognateCell extends Tcell {
             double daughterStimulation = parentStimulation / 2 ;
             boolean activated = getActivation();
             boolean effector = getEffector(); //this means if activated/effector,produce daughter cells of the same type
-            //instead of a new cell , just reset the age and stim on self?
+            //instead of a new cell , reset the age and stim on self
             int TimeSinceDif = getTimeSinceDif();
             //update parent (to new daughter)
             setAge(daughterAge);
@@ -337,10 +322,8 @@ public class CognateCell extends Tcell {
             //probably end up with some subsets. // to get rid of the subsets and have in one set, you 
             // need to set daughter same as parent
             setTimeSinceFirstAct(1);
-          
-           //could add regulation of S1P1 per profliferation here if you wanted to 
-            
-            //timesincefirst bound stays the same as it's overuled by prolif anyway
+
+            //timesincefirst bound stays the same as it's over-ruled by proliferation rules anyway
                         
             Context context = ContextUtils.getContext(this);
             
@@ -371,13 +354,9 @@ public class CognateCell extends Tcell {
             		M,
             		TimeSinceDif);
             context.add(cell);
-          //  System.out.println("Daugter  cell added CD4 activation time = " + getTimeSinceFirstAct());
-            
+ 
             //method to get neighbors and filter the result and return a list 
             List<GridCell<Tcell>>inside = getInsideGrids(thispoint);
-            //tbh this gives an array of grid cells not gridpoint> useful if you want to check the contents of the cells i suppose
-            // could have a different method that just returns grid points, not their contents. 
-            //this would be the manual + 1 -1 method, for now, just keep the cell method
             SimUtilities.shuffle(inside, RandomHelper.getUniform());
             
             if (inside.size() == 0)
@@ -387,7 +366,6 @@ public class CognateCell extends Tcell {
             else
             {
             GridPoint insidepoint = inside.get(0).getPoint();
-            //shuffle list 
            // space.moveTo(cell,insidepoint.getX(), insidepoint.getY(),insidepoint.getZ());//space pt
             grid.moveTo(cell, insidepoint.getX(), insidepoint.getY(),insidepoint.getZ());
             
@@ -450,7 +428,6 @@ public class CognateCell extends Tcell {
             		M,
             		TimeSinceDif);
             context.add(cell);
-          //  System.out.println("Daugter  cell added CD8");
             
             //method to get neighbors and filter the result and return a list 
             List<GridCell<Tcell>>inside = getInsideGrids(thispoint);
@@ -505,15 +482,12 @@ public void seeIfEffector()
 					setActivation(false); //no need to alter, actually there is otherwise counted in ifs
 					setTimeSinceDif(1); // instead do this
 					setM(true);
-					//tActivation(false); //removes from the reproduction cycle 
-					//System.out.println("Memory Cell made");
 				}
 				else{
 				setEffector(true);
-				//setTimeSinceFirstAct(1); // as will only be updated if > 0/ 
-				setTimeSinceDif(1); // instead do this
+				setTimeSinceDif(1); // instead do this instead of set time since act 1
 				setS1P1(Constants.S1P1eff_early);				
-				setActivation(false); // i think this is ok. 
+				setActivation(false); 
 			}}}
 			else
 			{
@@ -522,7 +496,6 @@ public void seeIfEffector()
 					if (RandomHelper.nextIntFromTo(0, 10000)< (Constants.early_dif_ratio*10000)) 
 					{//make memory cell} 
 						setEffector(false);
-						//setTimeSinceFirstAct(1); // as will only be updated if > 0/ 
 						setTimeSinceFirstAct(1); //testing
 						setTimeSinceDif(1); // instead do this
 						setS1P1(Constants.S1P1mem);
@@ -541,14 +514,11 @@ public void seeIfEffector()
 		}
 	}
 public void seeIfMemoryorEff()
-{
-	
+{	
 	//this will be to take cells with prolif > 6 and see if they differentiate into memory cells or continue as effectors.
-	// is a requisite to be an effector already
-	//so activation = 0, effector = 0, CM = 1 
+	// is a requisite to be an effector already, so now activation = 0, effector = 0, CM = 1 
 	
 	if (getTimeSinceDif() >1440  ){ // no need for upper limit as it's always set back to 1 in the update section
-		//could maybe alter this into a joint method
 		double x = RandomHelper.nextDoubleFromTo(0, 1000)/1000;	
 		int e1 = Constants.EFFECTOR_MEAN_CD4;
 		double f1 = Constants.EFFECTOR_CURVE_CD4;
@@ -564,20 +534,18 @@ public void seeIfMemoryorEff()
 		{
 			if (RandomHelper.nextIntFromTo(0, 10000)< (Constants.late_dif_ratio *10000) ) 
 			{//make memory cell} 
-				setEffector(false);
-				//setTimeSinceFirstAct(1); // as will only be updated if > 0/ 
-				setTimeSinceDif(1); // instead do this
+				setEffector(false);				
+				setTimeSinceDif(1); // instead do this instead of act=1
 				setS1P1(Constants.S1P1mem);
 				setActivation(false);
 				setM(true);
-				//System.out.println("Memory Cell made");
 			}
 			else{
 			setEffector(true);
 			//setTimeSinceFirstAct(1); // as will only be updated if > 0/ 
 			setTimeSinceDif(1); // instead do this
 			setS1P1(Constants.S1P1eff_late);
-			setActivation(false); // i think this is ok. 
+			setActivation(false);  
 		}}}
 		else{
 			if ( x < effProbCD8 )
@@ -585,19 +553,16 @@ public void seeIfMemoryorEff()
 				if (RandomHelper.nextIntFromTo(0, 10000)< (Constants.late_dif_ratio*10000)) 
 				{//make memory cell} 
 					setEffector(false);
-					//setTimeSinceFirstAct(1); // as will only be updated if > 0/ 
-					setTimeSinceDif(1); // instead do this
+					setTimeSinceDif(1); 
 					setS1P1(Constants.S1P1mem);
 					setActivation(false);
 					setM(true);
-					//System.out.println("Memory Cell made");
 				}
 				else{
 				setEffector(true);
-				//setTimeSinceFirstAct(1); // as will only be updated if > 0/ 
 				setTimeSinceDif(1); // instead do this
 				setS1P1(Constants.S1P1eff_late);
-				setActivation(false); // i think this is ok. 
+				setActivation(false);  
 			}}}		}
 }
 	
@@ -609,8 +574,8 @@ public void updateInitalS1P1 ()
 
 
 @Override
-public void checkInflammation()  //acts on cognate cells that are not activated at start and new
-//ones that enter at the end of the stim. 
+public void checkInflammation()
+//acts on cognate cells that are not activated at start and new ones that enter at the end of the stim. 
 {
 	if(getActivation() ==false && getEffector()==false && getM()==false)
 	{
@@ -670,12 +635,12 @@ public void setStimulation(double newstimulation)
  private void setActivation(boolean value)
  {
 	 this.Activated = value;
-	 //this.setTimeSinceFirstAct(1);
+	 
  }
  
  private void setEffector(boolean value)
  {
-	 this.Effector = value; //but need to set Activated false?  
+	 this.Effector = value; 
  }
  
  public boolean getEffector()
